@@ -1,0 +1,11 @@
+# editors
+
+.idea/
+.vscode/
+
+# python
+
+*.pyc
+*.pyd
+*.pyo
+__pycache__/
