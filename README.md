@@ -1,6 +1,6 @@
-## hello_juju.py
+## hello_juju
 
-`hello_juju` is a minimal Flask application for demonstrating how to use [Juju][] to deploy applications that talk to the Internet.
+`hello_juju` is a minimal Flask application for demonstrating how to use [Juju][] to deploy applications and to demonstrate Juju relations.
 
 ## More information
 
