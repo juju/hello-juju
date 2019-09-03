@@ -16,6 +16,9 @@ class Greeting(db):
     def __repr__(self):
         return f"<Greeting {self.id} ({self.created_at})>"
 
+def init():
+    db.create_all()
+
 def increment_greetings():
     db.session.add(Greeting())
     db.session.commit()
