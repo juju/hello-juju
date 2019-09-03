@@ -1,3 +1,4 @@
 Flask>=1.0
 Flask-SQLAlchemy>=2.4
+pg8000
 python-dotenv
