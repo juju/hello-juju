@@ -1,3 +1,3 @@
 import hello_juju
 
-hello_juju.init()
+hello_juju.db.create_all()
