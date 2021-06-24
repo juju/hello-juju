@@ -1,4 +1,12 @@
-Flask>=1.0
-Flask-SQLAlchemy>=2.4
-pg8000<1.16.6
-python-dotenv
+click==8.0.1
+Flask==2.0.1
+Flask-SQLAlchemy==2.5.1
+greenlet==1.1.0
+itsdangerous==2.0.1
+Jinja2==3.0.1
+MarkupSafe==2.0.1
+pg8000==1.16.6
+python-dotenv==0.17.1
+scramp==1.2.0
+SQLAlchemy==1.4.15
+Werkzeug==2.0.1

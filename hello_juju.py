@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 
@@ -18,20 +18,22 @@ class Greeting(db.Model):
     def __repr__(self):
         return f"<Greeting {self.id} ({self.created_at})>"
 
+
 def increment_greetings():
     db.session.add(Greeting())
     db.session.commit()
 
+
 @app.route('/greetings')
 def count_greetings():
     global db
+    return {"greetings": db.session.query(func.count(Greeting.id)).scalar()}
 
-    return {"greetings": db.session.query(func.count(Greeting.id)).scalar() }
 
 @app.route('/')
 def hello_world():
     increment_greetings()
-    return 'Hello Juju!\r\n'
+    return render_template("index.html")
 
 
 if __name__ == '__main__':
