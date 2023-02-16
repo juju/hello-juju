@@ -9,4 +9,4 @@ pg8000==1.16.6
 python-dotenv==0.17.1
 scramp==1.2.0
 SQLAlchemy==1.4.15
-Werkzeug==2.0.1
+Werkzeug==2.2.3
